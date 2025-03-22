@@ -1,16 +1,13 @@
 body {
-    background: rgba(0, 0, 0, 0) !important; /* Fondo transparente */
+    background: transparent !important;
 }
 
-#controller {
-    opacity: 0.5; /* Ajusta la transparencia del mando */
+#gamepad, #controller {
+    opacity: 0.5;
     filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.3));
 }
 
-button, .button {
-    opacity: 1 !important; /* Mantiene los botones visibles */
-}
-
-svg path {
-    fill: rgba(255, 255, 255, 0.7); /* Hace que los detalles del mando sean semitransparentes */
+button, .button, svg path {
+    opacity: 1 !important;
+    fill: rgba(255, 255, 255, 1) !important;
 }
